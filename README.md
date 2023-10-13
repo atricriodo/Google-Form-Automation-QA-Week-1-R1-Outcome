@@ -13,24 +13,17 @@
 
    1. clone this repo to your machine using git clone
    2. To build the project: 
-   _MacOS_ / _Linux_
+   _MacOS_ / _Linux_ /  _Windows_
          ```
          ./gradlew build
          ```
-      _Windows_
-      ```
-      gradlew.bat build
-      ```
 
    3. To run the project: 
-   _MacOS_ / _Linux_
+   _MacOS_ / _Linux_ /  _Windows_
       ```
       ./gradlew run
       ```
-      _Windows_
-      ```
-      gradlew.bat run
-      ```
+
 ## Writing your test case:
 
    *Test cases are part of the /src/main/java/demo/TestCases.java file.*
@@ -46,6 +39,7 @@
    //TODO: call your test case functions one after other here
    ```
    3. Call the newly created methods under the TODO block
+
 
 
 
