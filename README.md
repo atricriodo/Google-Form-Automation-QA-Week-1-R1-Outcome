@@ -2,6 +2,26 @@
 
 This java project contains the essentials to get started with selenium quickly without having to go through the hassle of downloading individual dependencies one by one.
 
+## Installation and downloads:
+
+Note:
+
+There can be version compatibility issues between Java and Gradle.
+Please visit this link to know more: https://docs.gradle.org/current/userguide/compatibility.html
+
+We suggest you to use the below Java and Gradle versions:
+
+Download links:
+
+Java: 17.05:
+
+https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+
+Gradle: 7.5.1:
+
+https://gradle.org/releases/
+
+
 ## What does this project use?
 
 This project uses gradle , webdriver manager , selenium v4
