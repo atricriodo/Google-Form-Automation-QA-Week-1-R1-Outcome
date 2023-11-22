@@ -1,7 +1,7 @@
 package demo;
 
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -13,8 +13,6 @@ public class TestCases {
         WebDriverManager.chromedriver().timeout(30).setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
     }
 
     public void endTest()

@@ -13,8 +13,6 @@ apply plugin: 'application'
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = "17.0.5"
-
 repositories {
     mavenCentral()
 }
