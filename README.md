@@ -1,77 +1,59 @@
-# Selenium Boilerplate:
-
-This java project contains the essentials to get started with selenium quickly without having to go through the hassle of downloading individual dependencies one by one.
-
-## Installation and downloads:
-
-Note:
-
-There can be version compatibility issues between Java and Gradle.
-Please visit this link to know more: https://docs.gradle.org/current/userguide/compatibility.html
-
-We suggest you to use the below Java and Gradle versions:
-
-Download links:
-
-Java: 17.05:
-
-https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
-
-Gradle: 7.5.1:
-
-https://gradle.org/releases/
+# **<span style="text-decoration:underline;">QA Assignment - Automate Google Forms</span>**
 
 
-## What does this project use?
+### **Introduction**
 
-This project uses gradle , webdriver manager , selenium v4
+Automate and fill a google form.
 
-## Pre-requesites:
+[Template link](https://docs.google.com/spreadsheets/d/19kyX9JoKm2pJON4qpD1yHI_i_rGQIc7LbM-2yO8832g/edit#gid=0)
 
-- git: https://github.com/git-guides/install-git
-- Java : https://www.java.com/en/download/help/download_options.html
-- Gradle: https://docs.gradle.org/current/userguide/installation.html
 
-## Getting started:
+### **Scenario**
 
-1.  clone this repo to your machine using git clone
-2.  To build the project:
 
-    _MacOS_ / _Linux_ / _Windows_
-    ```
-    ./gradlew build
-     ```
 
-3.  To run the project:
+1. Navigate to [this google form](https://forms.gle/wjPkzeSEk1CM7KgGA).
 
-    _MacOS_ / _Linux_ / _Windows_
-    ```
-    ./gradlew run
-    ```
+2. Fill in your name in the 1st text box
 
-## Writing your test case:
+3. Write down “I want to be the best QA Engineer! **1710572021**'' where _1710572021_ is variable - needs to be the current epoch time. Read more about it [here](https://www.epochconverter.com/#:~:text=days%2C%20hours%2C%20minutes-,What%20is%20epoch%20time%3F,-The%20Unix%20epoch).
 
-_Test cases are part of the /src/main/java/demo/TestCases.java file._
+4. Enter your Automation Testing experience in the next radio button
 
-### Defining new test case:
+5. Select Java, Selenium and TestNG from the next check-box
 
-1.  Open TestCases.java file
-2.  Create a copy of the function testCase01()
-3.  Update the contents of the newly created method with your own custom logic
+6. Provide how you would like to be addressed in the next dropdown
 
-### Calling the newly created test case:
+7. Provided the current date minus 7 days in the next date field, it should be dynamically calculated and **not** hardcoded.
 
-1.  open /src/App.java
-2.  notice the TODO block:
+8. Provide the current time (Keeping in mind AM/PM) in the next field
 
-```
-//TODO: call your test case functions one after other here
-```
+9. Try going to another website (amazon.in) and you will find the pop up as follows. Click on **cancel**.
 
-3.  Call the newly created methods under the TODO block
+10. Submit the form
 
-### Java doc for reference:
+11. Print the message upon successful completion
 
-1.  Selenium - https://javadoc.io/doc/org.seleniumhq.selenium/selenium-api/latest/index.html
-2.  WebDriverManager - https://javadoc.io/doc/io.github.bonigarcia/webdrivermanager/latest/index.html
-3.  JUnit - https://javadoc.io/doc/org.junit.jupiter/junit-jupiter-api/latest/index.html
+### **Validations**
+
+
+
+* Ensure your code is properly commented - **We will check the code quality**.
+* Ensure you push your code after each step mentioned prior - **We will check each commit**
+* Ensure each of the following are separate methods with wrappers - **We will check modularity**
+    * Filling in text boxes
+    * Ticking a check-box or radio button
+    * Selecting from dropdown
+    * Filling the date field
+    * Filling the time field
+    * Handling alert
+
+
+### **Follow up Questions**
+
+
+
+* How did you calculate the EPOCH time within the code?
+* How did you handle drop-downs in the given assignment?
+* How did you parse the date and time in the given assignment?
+* How did you handle the alert in the given assignment?
