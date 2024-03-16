@@ -16,7 +16,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestCases {
     ChromeDriver driver;
-    static int error_call = 0;
 
     public TestCases() {
         System.out.println("Constructor: TestCases");
