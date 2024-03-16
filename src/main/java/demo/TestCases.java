@@ -36,7 +36,7 @@ public class TestCases {
         System.out.println("Start Test case: Google Form");
         // Navigate to gogle form
         driver.get("https://forms.gle/wjPkzeSEk1CM7KgGA");
-        Thread.sleep(5000);
+        Thread.sleep(8000);
         try {
             // Fill in name in 1st text box
             writeText(driver, By.xpath("//div['Xb9hP']/input[@type='text']"), "Atri Biswas");
@@ -89,6 +89,7 @@ public class TestCases {
     }
 
     private static void writeText(ChromeDriver driver, By selector, String textToSend) throws Exception {
+        System.out.println("Trying to send text - "+textToSend);
         // Initialize the webdriver wait
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         // Wait till the element is visible
@@ -99,6 +100,7 @@ public class TestCases {
         element.clear();
         element.sendKeys(textToSend);
         Thread.sleep(2000);
+        System.out.println("Success!");
     }
 
     private static String calculateDateTimeToString(String formatString, long offsetInMs) {
@@ -133,6 +135,7 @@ public class TestCases {
     }
 
     private static void clickCheckBox(ChromeDriver driver, By selector) throws Exception {
+        System.out.println("Trying to check boxes/ radio buttons");
         // Initialize the webdriver wait
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         // Wait till the element is visible
@@ -141,10 +144,12 @@ public class TestCases {
         WebElement element = driver.findElement(selector);
         element.click();
         Thread.sleep(2000);
+        System.out.println("Success!");
     }
 
     private static void selectFromDropdown(ChromeDriver driver, By dropDownSelector, String textToSelect)
             throws Exception {
+        System.out.println("Trying to select from dropdown - "+textToSelect);
         // Find Dropdown
         WebElement dropdownElement = driver.findElement(dropDownSelector);
 
@@ -155,9 +160,11 @@ public class TestCases {
         // Select the option by visible text
         driver.findElement(By.xpath("(//div[@data-value='" + textToSelect + "'])[2]")).click();
         Thread.sleep(2000);
+        System.out.println("Success!");
     }
 
     private static void handleAlert(ChromeDriver driver, Boolean confirm) throws InterruptedException {
+        System.out.println("Trying to handle alert");
         // Wait for the alert to be present and switch to it
         Alert alert = driver.switchTo().alert();
         Thread.sleep(2000);
@@ -169,5 +176,6 @@ public class TestCases {
             // Dismiss the alert (click Cancel)
             alert.dismiss();
         }
+        System.out.println("Success!");
     }
 }
