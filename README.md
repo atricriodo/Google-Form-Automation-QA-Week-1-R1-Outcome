@@ -47,7 +47,8 @@ Automate and fill a google form.
     * Filling the date field
     * Filling the time field
     * Handling alert
-
+* Ensure that the SOPLs(System Out Print Line statements) are properly used - **We will check logging**
+* Ensure proper exception handling
 
 ### **Follow up Questions**
 
